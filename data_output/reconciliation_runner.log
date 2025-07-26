@@ -1,0 +1,174 @@
+2025-07-26 10:02:53,528 - INFO - Copied SQL file to data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 10:02:53,529 - INFO - Starting reconciliation process with LLM analysis
+2025-07-26 10:02:53,565 - ERROR - Error during catalog reconciliation: '{' was never closed (catalog_reconciliation_1.py, line 993)
+2025-07-26 10:02:53,565 - ERROR - Error in reconciliation process: '{' was never closed (catalog_reconciliation_1.py, line 993)
+Traceback (most recent call last):
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 154, in main
+    results = run_reconciliation_with_llm_analysis(
+        shopify_file=args.shopify,
+    ...<2 lines>...
+        api_key=None if args.mock_llm else args.api_key
+    )
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 51, in run_reconciliation_with_llm_analysis
+    from data_src.catalog_reconciliation_1 import ProductCatalogReconciliation
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\data_src\catalog_reconciliation_1.py", line 993
+    match_record['field_comparisons'][-1]['keyword_analysis'] = {
+                                                                ^
+SyntaxError: '{' was never closed
+2025-07-26 10:05:35,221 - INFO - Copied SQL file to data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 10:05:35,222 - INFO - Starting reconciliation process with LLM analysis
+2025-07-26 10:05:39,004 - ERROR - Error during catalog reconciliation: ProductCatalogReconciliation.__init__() got an unexpected keyword argument 'shopify_file'. Did you mean 'shopify_path'?
+2025-07-26 10:05:39,005 - ERROR - Error in reconciliation process: ProductCatalogReconciliation.__init__() got an unexpected keyword argument 'shopify_file'. Did you mean 'shopify_path'?
+Traceback (most recent call last):
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 154, in main
+    results = run_reconciliation_with_llm_analysis(
+        shopify_file=args.shopify,
+    ...<2 lines>...
+        api_key=None if args.mock_llm else args.api_key
+    )
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 54, in run_reconciliation_with_llm_analysis
+    pipeline = ProductCatalogReconciliation(
+        shopify_file=shopify_file,
+        sql_file=sql_file,
+        output_dir=output_dir
+    )
+TypeError: ProductCatalogReconciliation.__init__() got an unexpected keyword argument 'shopify_file'. Did you mean 'shopify_path'?
+2025-07-26 10:05:50,064 - INFO - Copied SQL file to data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 10:05:50,065 - INFO - Starting reconciliation process with LLM analysis
+2025-07-26 10:05:52,638 - ERROR - Error during catalog reconciliation: ProductCatalogReconciliation.__init__() got an unexpected keyword argument 'shopify_file'. Did you mean 'shopify_path'?
+2025-07-26 10:05:52,639 - ERROR - Error in reconciliation process: ProductCatalogReconciliation.__init__() got an unexpected keyword argument 'shopify_file'. Did you mean 'shopify_path'?
+Traceback (most recent call last):
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 154, in main
+    results = run_reconciliation_with_llm_analysis(
+        shopify_file=args.shopify,
+    ...<2 lines>...
+        api_key=None if args.mock_llm else args.api_key
+    )
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 54, in run_reconciliation_with_llm_analysis
+    pipeline = ProductCatalogReconciliation(
+        shopify_file=shopify_file,
+        sql_file=sql_file,
+        output_dir=output_dir
+    )
+TypeError: ProductCatalogReconciliation.__init__() got an unexpected keyword argument 'shopify_file'. Did you mean 'shopify_path'?
+2025-07-26 10:07:18,527 - INFO - Copied SQL file to data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 10:07:18,528 - INFO - Starting reconciliation process with LLM analysis
+2025-07-26 10:07:21,664 - INFO - Initialized reconciliation pipeline. Output directory: data_output
+2025-07-26 10:07:21,665 - INFO - Running catalog reconciliation pipeline
+2025-07-26 10:07:21,665 - ERROR - Error during catalog reconciliation: 'ProductCatalogReconciliation' object has no attribute 'run'
+2025-07-26 10:07:21,665 - ERROR - Error in reconciliation process: 'ProductCatalogReconciliation' object has no attribute 'run'
+Traceback (most recent call last):
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 154, in main
+    results = run_reconciliation_with_llm_analysis(
+        shopify_file=args.shopify,
+    ...<2 lines>...
+        api_key=None if args.mock_llm else args.api_key
+    )
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 62, in run_reconciliation_with_llm_analysis
+    reconciliation_results = pipeline.run()
+                             ^^^^^^^^^^^^
+AttributeError: 'ProductCatalogReconciliation' object has no attribute 'run'
+2025-07-26 11:05:58,374 - INFO - Copied SQL file to data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 11:05:58,377 - INFO - Starting reconciliation process with LLM analysis
+2025-07-26 11:06:02,263 - INFO - Initialized reconciliation pipeline. Output directory: data_output
+2025-07-26 11:06:02,264 - INFO - Running catalog reconciliation pipeline
+2025-07-26 11:06:02,265 - INFO - Starting full catalog reconciliation process
+2025-07-26 11:06:02,265 - ERROR - Error during catalog reconciliation: 'NoneType' object has no attribute 'copy'
+2025-07-26 11:06:02,266 - ERROR - Error in reconciliation process: 'NoneType' object has no attribute 'copy'
+Traceback (most recent call last):
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 154, in main
+    results = run_reconciliation_with_llm_analysis(
+        shopify_file=args.shopify,
+    ...<2 lines>...
+        api_key=None if args.mock_llm else args.api_key
+    )
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 62, in run_reconciliation_with_llm_analysis
+    reconciliation_results = pipeline.reconcile_catalog()
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\data_src\catalog_reconciliation_1.py", line 1369, in reconcile_catalog
+    matches_df = self.match_products()
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\data_src\catalog_reconciliation_1.py", line 300, in match_products
+    shopify = self.shopify_data.copy().reset_index(drop=True)
+              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'copy'
+2025-07-26 11:14:58,443 - INFO - Copied SQL file to data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 11:14:58,444 - INFO - Starting reconciliation process with LLM analysis
+2025-07-26 11:15:02,068 - INFO - Initialized reconciliation pipeline. Output directory: data_output
+2025-07-26 11:15:02,069 - INFO - Running catalog reconciliation pipeline
+2025-07-26 11:15:02,069 - INFO - Loading data from source files
+2025-07-26 11:15:02,070 - INFO - Loading Shopify data from files/Shopify_products_export_24_07_2025.csv
+2025-07-26 11:15:02,414 - INFO - Loaded 9193 products from Shopify
+2025-07-26 11:15:02,414 - INFO - Loading SQL data from data_output\ITEMS_Supermu_SQL_copy.xlsx
+2025-07-26 11:15:07,068 - INFO - Loaded 12763 products from SQL database
+2025-07-26 11:15:07,097 - INFO - Standardized field names across data sources
+2025-07-26 11:15:07,098 - INFO - Preprocessing data
+2025-07-26 11:15:07,330 - INFO - Preprocessed data for matching with improved SKU normalization
+2025-07-26 11:15:07,330 - INFO - Performing reconciliation
+2025-07-26 11:15:07,331 - INFO - Starting full catalog reconciliation process
+2025-07-26 11:15:07,395 - INFO - Shopify columns: ['handle', 'title', 'Body (HTML)', 'vendor', 'category', 'Type', 'Tags', 'Published', 'Option1 Name', 'Option1 Value', 'Option1 Linked To', 'Option2 Name', 'Option2 Value', 'Option2 Linked To', 'Option3 Name', 'Option3 Value', 'Option3 Linked To', 'sku', 'Variant Grams', 'Variant Inventory Tracker', 'Variant Inventory Policy', 'Variant Fulfillment Service', 'price', 'Variant Compare At Price', 'Variant Requires Shipping', 'Variant Taxable', 'barcode', 'Image Src', 'Image Position', 'Image Alt Text', 'Gift Card', 'SEO Title', 'SEO Description', 'Google Shopping / Google Product Category', 'Google Shopping / Gender', 'Google Shopping / Age Group', 'Google Shopping / MPN', 'Google Shopping / Condition', 'Google Shopping / Custom Product', 'Google Shopping / Custom Label 0', 'Google Shopping / Custom Label 1', 'Google Shopping / Custom Label 2', 'Google Shopping / Custom Label 3', 'Google Shopping / Custom Label 4', 'Factor unidad de medida (product.metafields.custom.factor_unidad_de_medida)', 'Pum (product.metafields.custom.pum)', 'Unidad de medida pum (product.metafields.custom.unidad_de_medida_pum)', 'Google: Custom Product (product.metafields.mm-google-shopping.custom_product)', 'Age group (product.metafields.shopify.age-group)', 'Allergen information (product.metafields.shopify.allergen-information)', 'Animal type (product.metafields.shopify.animal-type)', 'Application method (product.metafields.shopify.application-method)', 'Applicator type (product.metafields.shopify.applicator-type)', 'Bag/Case features (product.metafields.shopify.bag-case-features)', 'Battery size (product.metafields.shopify.battery-size)', 'Battery type (product.metafields.shopify.battery-type)', 'Beverage product form (product.metafields.shopify.beverage-product-form)', 'Bird food form (product.metafields.shopify.bird-food-form)', 'Brandy variety (product.metafields.shopify.brandy-variety)', 'Bug type (product.metafields.shopify.bug-type)', 'Caffeine content (product.metafields.shopify.caffeine-content)', 'Candle type (product.metafields.shopify.candle-type)', 'Cat age group (product.metafields.shopify.cat-age-group)', 'Cat litter formula (product.metafields.shopify.cat-litter-formula)', 'Chocolate type (product.metafields.shopify.chocolate-type)', 'Cleaning surfaces (product.metafields.shopify.cleaning-surfaces)', 'Coffee product form (product.metafields.shopify.coffee-product-form)', 'Coffee roast (product.metafields.shopify.coffee-roast)', 'Color (product.metafields.shopify.color-pattern)', 'Conditioner effect (product.metafields.shopify.conditioner-effect)', 'Condom type (product.metafields.shopify.condom-type)', 'Constitutive ingredients (product.metafields.shopify.constitutive-ingredients)', 'Cooking method (product.metafields.shopify.cooking-method)', 'Cosmetic function (product.metafields.shopify.cosmetic-function)', 'Country (product.metafields.shopify.country)', 'Cuisine (product.metafields.shopify.cuisine)', 'Diaper type (product.metafields.shopify.diaper-type)', 'Dietary preferences (product.metafields.shopify.dietary-preferences)', 'Dietary supplements (product.metafields.shopify.dietary-supplements)', 'Dispenser type (product.metafields.shopify.dispenser-type)', 'Dog age group (product.metafields.shopify.dog-age-group)', 'Dry bean variety (product.metafields.shopify.dry-bean-variety)', 'E-cigarette/Vaporizer style (product.metafields.shopify.e-cigarette-vaporizer-style)', 'E-liquid flavor (product.metafields.shopify.e-liquid-flavor)', 'E-liquid variety (product.metafields.shopify.e-liquid-variety)', 'Fat content (product.metafields.shopify.fat-content)', 'Feminine sanitary supply features (product.metafields.shopify.feminine-sanitary-supply-features)', 'Flavor (product.metafields.shopify.flavor)', 'Flour/Grain type (product.metafields.shopify.flour-grain-type)', 'Food product form (product.metafields.shopify.food-product-form)', 'Heat level (product.metafields.shopify.heat-level)', 'Ingredients (product.metafields.shopify.ingredients)', 'Laundry detergent features (product.metafields.shopify.laundry-detergent-features)', 'Lubricant application (product.metafields.shopify.lubricant-application)', 'Lubricant composition (product.metafields.shopify.lubricant-composition)', 'Material (product.metafields.shopify.material)', 'Meat cut (product.metafields.shopify.meat-cut)', 'Nut butter variety (product.metafields.shopify.nut-butter-variety)', 'Nut/Seed type (product.metafields.shopify.nut-seed-type)', 'Package type (product.metafields.shopify.package-type)', 'Pasta type (product.metafields.shopify.pasta-type)', 'Pet dietary requirements (product.metafields.shopify.pet-dietary-requirements)', 'Pet food flavor (product.metafields.shopify.pet-food-flavor)', 'Pet food form (product.metafields.shopify.pet-food-form)', 'Pet food supplements (product.metafields.shopify.pet-food-supplements)', 'Pet supply product form (product.metafields.shopify.pet-supply-product-form)', 'Product certifications & standards (product.metafields.shopify.product-certifications-standards)', 'Product form (product.metafields.shopify.product-form)', 'Region (product.metafields.shopify.region)', 'Rum grade (product.metafields.shopify.rum-grade)', 'Seafood type (product.metafields.shopify.seafood-type)', 'Shampoo type (product.metafields.shopify.shampoo-type)', 'Soda variety (product.metafields.shopify.soda-variety)', 'Suitable for hair type (product.metafields.shopify.suitable-for-hair-type)', 'Suitable for skin type (product.metafields.shopify.suitable-for-skin-type)', 'Suitable space (product.metafields.shopify.suitable-space)', 'Tampon absorbency level (product.metafields.shopify.tampon-absorbency-level)', 'Target gender (product.metafields.shopify.target-gender)', 'Tea input type (product.metafields.shopify.tea-input-type)', 'Tequila variety (product.metafields.shopify.tequila-variety)', 'Toothpaste type (product.metafields.shopify.toothpaste-type)', 'Usage type (product.metafields.shopify.usage-type)', 'Vinegar variety (product.metafields.shopify.vinegar-variety)', 'Whiskey style (product.metafields.shopify.whiskey-style)', 'Whiskey variety (product.metafields.shopify.whiskey-variety)', 'Wine sweetness (product.metafields.shopify.wine-sweetness)', 'Wine variety (product.metafields.shopify.wine-variety)', 'Wipe packaging (product.metafields.shopify.wipe-packaging)', 'Complementary products (product.metafields.shopify--discovery--product_recommendation.complementary_products)', 'Related products (product.metafields.shopify--discovery--product_recommendation.related_products)', 'Related products settings (product.metafields.shopify--discovery--product_recommendation.related_products_display)', 'Search product boosts (product.metafields.shopify--discovery--product_search_boost.queries)', 'image_url', 'weight_unit', 'Variant Tax Code', 'Cost per item', 'Included / Colombia', 'Price / Colombia', 'Compare At Price / Colombia', 'status', 'clean_title', 'normalized_sku', 'alt_normalized_sku', 'source', 'matched', 'match_method', 'match_confidence', 'match_id']
+2025-07-26 11:15:07,405 - INFO - SQL columns: ['item_id', 'sku', 'barcode', 'title', 'unit_measure', 'U.M. orden', 'U.M. empaque', 'CLASE DE INVENTARIO', 'SECCION', 'MUNDO', 'category', 'LINEA', 'SUB LINEA', 'CASA PROVEEDOR', 'brand', 'TRASNOCHON', 'status', 'clean_title', 'normalized_sku', 'alt_normalized_sku', 'source', 'matched', 'match_method', 'match_confidence', 'match_id']
+2025-07-26 11:15:07,405 - INFO - Found Shopify SKU field: sku
+2025-07-26 11:15:07,407 - INFO - Found SQL SKU field: sku
+2025-07-26 11:15:07,408 - INFO - Performing direct raw SKU matching (Excel VLOOKUP equivalent) between sku and sku
+2025-07-26 11:15:07,408 - INFO - Matching by fields: sku (Shopify) and sku (SQL)
+2025-07-26 11:15:07,409 - INFO - Using Excel VLOOKUP-like matching for SKUs
+2025-07-26 11:15:07,453 - INFO - Sample of unmatched Shopify sku: [np.float64(18612.0), np.float64(18611.0), np.float64(18610.0), np.float64(18609.0), np.float64(18608.0), np.float64(18607.0), np.float64(18606.0), np.float64(37962.0), np.float64(29237.0), np.float64(29192.0), np.float64(24708.0), np.float64(19087.0), np.float64(19063.0), np.float64(43273.0), np.float64(43275.0)]
+2025-07-26 11:15:07,484 - INFO - Sample of unmatched SQL sku: ['0017518                                           ', '011966                                            ', '032422                                            ', '033118                                            ', '028127                                            ', '029176                                            ', '003544                                            ', '038975                                            ', '038976                                            ', '017495                                            ', '0015709                                           ', '030271                                            ', '003529                                            ', '015849                                            ', '034483                                            ', '003530                                            ', '036224                                            ', '040444                                            ', '040445                                            ', '032611                                            ']
+2025-07-26 11:15:08,357 - INFO - Created SQL lookup dictionary with 27363 unique values
+2025-07-26 11:15:08,358 - INFO - Sample of unmatched Shopify normalized normalized_sku: ['18612', '18611', '18610', '18609', '18608', '18607', '18606', '37962', '29237', '29192', '24708', '19087', '19063', '43273', '43275']
+2025-07-26 11:15:08,358 - INFO - Sample of unmatched SQL normalized normalized_sku: ['0017518', '011966', '032422', '033118', '028127', '029176', '003544', '038975', '038976', '017495', '0015709', '030271', '003529', '015849', '034483', '003530', '036224', '040444', '040445', '032611']
+2025-07-26 11:15:09,015 - INFO - Found 8579 matches by sku/sku, sample: [{'shopify_index': 8, 'sql_index': 6167, 'confidence': 1.0}, {'shopify_index': 9, 'sql_index': 216, 'confidence': 1.0}, {'shopify_index': 14, 'sql_index': 830, 'confidence': 1.0}, {'shopify_index': 15, 'sql_index': 4660, 'confidence': 1.0}, {'shopify_index': 16, 'sql_index': 9859, 'confidence': 1.0}]
+2025-07-26 11:15:09,030 - INFO - Sample Shopify raw SKUs: [18612.0, 18611.0, 18610.0, 18609.0, 18608.0]
+2025-07-26 11:15:09,033 - INFO - Sample SQL raw SKUs: ['0017518                                           ', '011966                                            ', '032422                                            ', '033118                                            ', '028127                                            ']
+2025-07-26 11:15:22,054 - INFO - Found 8579 direct raw SKU matches
+2025-07-26 11:15:22,055 - INFO - Performing normalized SKU-based matching for remaining products
+2025-07-26 11:15:22,086 - INFO - Matching by fields: normalized_sku (Shopify) and normalized_sku (SQL)
+2025-07-26 11:15:22,086 - INFO - Using Excel VLOOKUP-like matching for SKUs
+2025-07-26 11:15:22,087 - INFO - Sample of unmatched Shopify sku: ['186120', '186110', '186100', '186090', '186080', '186070', '186060', '181600', '302600', '185630', '184700']
+2025-07-26 11:15:22,088 - INFO - Sample of unmatched SQL sku: ['0017518', '032422', '028127', '003544', '038975', '017495', '0015709', '034256', '043124', '028121', '012586', '0015838', '0015837', '043169', '0014991', '0017101', '0015850', '0016434', '020814', '036223']
+2025-07-26 11:15:22,378 - INFO - Created SQL lookup dictionary with 10096 unique values
+2025-07-26 11:15:22,379 - INFO - Sample of unmatched Shopify normalized normalized_sku: ['186120', '186110', '186100', '186090', '186080', '186070', '186060', '181600', '302600', '185630', '184700']
+2025-07-26 11:15:22,379 - INFO - Sample of unmatched SQL normalized normalized_sku: ['0017518', '032422', '028127', '003544', '038975', '017495', '0015709', '034256', '043124', '028121', '012586', '0015838', '0015837', '043169', '0014991', '0017101', '0015850', '0016434', '020814', '036223']
+2025-07-26 11:15:22,448 - INFO - Found 1 matches by normalized_sku/normalized_sku, sample: [{'shopify_index': 252, 'sql_index': 1796, 'confidence': 1.0}]
+2025-07-26 11:15:22,451 - INFO - Sample unmatched Shopify SKUs: ['186120', '186110', '186100', '186090', '186080']
+2025-07-26 11:15:22,452 - INFO - Sample unmatched SQL SKUs: ['0017518', '032422', '028127', '003544', '038975']
+2025-07-26 11:15:22,456 - INFO - Found 1 additional exact SKU matches
+2025-07-26 11:15:22,456 - INFO - Performing secondary SKU matching with title validation
+2025-07-26 11:15:22,486 - INFO - Sample of unmatched Shopify sku: [18612.0, 18611.0, 18610.0, 18609.0, 18608.0, 18607.0, 18606.0, 18160.0, 30260.0, 18563.0, 18470.0, 18471.0, 18463.0, 18459.0, 18469.0, 18474.0, 18481.0, 18475.0, 18473.0, 18484.0]
+2025-07-26 11:15:22,493 - INFO - Sample of unmatched SQL sku: ['0017518                                           ', '032422                                            ', '028127                                            ', '003544                                            ', '038975                                            ', '017495                                            ', '0015709                                           ', '034256                                            ', '043124                                            ', '028121                                            ', '012586                                            ', '0015838                                           ', '0015837                                           ', '043169                                            ', '0014991                                           ', '0017101                                           ', '0015850                                           ', '0016434                                           ', '020814                                            ', '036223                                            ']
+2025-07-26 11:15:22,500 - INFO - Sample of unmatched Shopify normalized normalized_sku: ['186120', '186110', '186100', '186090', '186080', '186070', '186060', '181600', '302600', '185630', '184700', '184710', '184630', '184590', '184690', '184740', '184810', '184750', '184730', '184840']
+2025-07-26 11:15:22,507 - INFO - Sample of unmatched SQL normalized normalized_sku: ['0017518', '032422', '028127', '003544', '038975', '017495', '0015709', '034256', '043124', '028121', '012586', '0015838', '0015837', '043169', '0014991', '0017101', '0015850', '0016434', '020814', '036223']
+2025-07-26 11:15:22,507 - INFO - Matching by fields: alt_normalized_sku (Shopify) and alt_normalized_sku (SQL)
+2025-07-26 11:15:22,508 - INFO - Using Excel VLOOKUP-like matching for SKUs
+2025-07-26 11:15:22,509 - INFO - Sample of unmatched Shopify sku: ['186120', '186110', '186100', '186090', '186080', '186070', '186060', '181600', '302600', '185630', '184700']
+2025-07-26 11:15:22,510 - INFO - Sample of unmatched SQL sku: ['0017518', '032422', '028127', '003544', '038975', '017495', '0015709', '034256', '043124', '028121', '012586', '0015838', '0015837', '043169', '0014991', '0017101', '0015850', '0016434', '020814', '036223']
+2025-07-26 11:15:22,789 - INFO - Created SQL lookup dictionary with 10095 unique values
+2025-07-26 11:15:22,789 - INFO - Sample of unmatched Shopify normalized normalized_sku: ['186120', '186110', '186100', '186090', '186080', '186070', '186060', '181600', '302600', '185630', '184700']
+2025-07-26 11:15:22,790 - INFO - Sample of unmatched SQL normalized normalized_sku: ['0017518', '032422', '028127', '003544', '038975', '017495', '0015709', '034256', '043124', '028121', '012586', '0015838', '0015837', '043169', '0014991', '0017101', '0015850', '0016434', '020814', '036223']
+2025-07-26 11:15:22,875 - INFO - Found 2 matches by alt_normalized_sku/alt_normalized_sku, sample: [{'shopify_index': 252, 'sql_index': 1795, 'confidence': 1.0}, {'shopify_index': 252, 'sql_index': 1795, 'confidence': 1.0}]
+2025-07-26 11:15:22,884 - INFO - Found 2 alternate SKU matches with title validation
+2025-07-26 11:15:22,884 - INFO - Performing barcode-based matching
+2025-07-26 11:15:22,908 - INFO - Unmatched products for barcode matching: 967 Shopify, 4358 SQL
+2025-07-26 11:15:22,908 - INFO - Matching by fields: barcode (Shopify) and barcode (SQL)
+2025-07-26 11:19:15,242 - INFO - Found 4 matches by barcode/barcode, sample: [{'shopify_index': 81, 'sql_index': 117, 'confidence': 1.0}, {'shopify_index': 162, 'sql_index': 4245, 'confidence': 1.0}, {'shopify_index': 604, 'sql_index': 2185, 'confidence': 1.0}, {'shopify_index': 605, 'sql_index': 2184, 'confidence': 1.0}]
+2025-07-26 11:19:15,254 - INFO - Found 4 exact barcode matches
+2025-07-26 11:19:15,255 - INFO - Performing fuzzy title-based matching
+2025-07-26 11:19:15,268 - INFO - Unmatched products: 0 from Shopify, 4358 from SQL
+2025-07-26 11:19:15,302 - INFO - Detecting discrepancies between matched products using likeness scores
+2025-07-26 11:19:15,308 - ERROR - Error during catalog reconciliation: name 'match_record' is not defined
+2025-07-26 11:19:15,309 - ERROR - Error in reconciliation process: name 'match_record' is not defined
+Traceback (most recent call last):
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 164, in main
+    results = run_reconciliation_with_llm_analysis(
+        shopify_file=args.shopify,
+    ...<2 lines>...
+        api_key=None if args.mock_llm else args.api_key
+    )
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\run_reconciliation_with_llm.py", line 72, in run_reconciliation_with_llm_analysis
+    reconciliation_results = pipeline.reconcile_catalog()
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\data_src\catalog_reconciliation_1.py", line 1372, in reconcile_catalog
+    self.detect_discrepancies(matches_df)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\BMK admin\OneDrive\Documents\GitHub\infinite-agentic-loop\data_src\catalog_reconciliation_1.py", line 993, in detect_discrepancies
+    match_record['field_comparisons'][-1]['keyword_analysis'] = {
+    ^^^^^^^^^^^^
+NameError: name 'match_record' is not defined

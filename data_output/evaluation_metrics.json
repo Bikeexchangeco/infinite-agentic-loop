@@ -1,0 +1,13 @@
+{
+  "total_products": 13911,
+  "matched_products": 5,
+  "match_rate": 0.00022778005557833357,
+  "match_confidence": 0.9999525972513394,
+  "resolution_percentages": {
+    "shopify": 31.264297474902015,
+    "sql": 52.110562282350536,
+    "combined": 16.625140242747445
+  },
+  "unmatched_shopify": 0,
+  "unmatched_sql": 4358
+}
